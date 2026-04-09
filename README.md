@@ -139,13 +139,6 @@ Event Viewer → Windows Logs → Security
 
 ---
 
-### 🔴 SMB Enumeration
-![SMB Enum](screenshots/smb_enum.png)
-
-👉 No anonymous shares found, indicating restricted access.
-
----
-
 ### 🔴 SMB Vulnerability Scan
 ![SMB Vuln](screenshots/smb_vuln.png)
 
