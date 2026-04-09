@@ -132,21 +132,39 @@ Event Viewer → Windows Logs → Security
 
 ## 📸 Screenshots
 
-### 🔴 Attack Evidence
+### 🔴 Port Scanning (Nmap)
+![Nmap Scan](screenshots/nmap_scan.png)
 
-* Nmap scan results
-* SMB enumeration output
-* SMB login attempts
-
-### 🔵 Detection Evidence
-
-* Event Viewer logs showing:
-
-  * Failed logins (4625)
-  * Successful login (4624)
-  * Privilege assignment (4672)
+👉 Shows open SMB port (445) along with RPC and NetBIOS services.
 
 ---
+
+### 🔴 SMB Enumeration
+![SMB Enum](screenshots/smb_enum.png)
+
+👉 No anonymous shares found, indicating restricted access.
+
+---
+
+### 🔴 SMB Vulnerability Scan
+![SMB Vuln](screenshots/smb_vuln.png)
+
+👉 No critical vulnerabilities detected on SMB service.
+
+---
+
+### 🔴 SMB Authentication Attack
+![SMB Attack](screenshots/smb_attack.png)
+
+👉 Multiple failed login attempts followed by access attempt to SMB shares.
+
+---
+
+### 🔵 Log Detection (Event Viewer)
+![Event Logs](screenshots/event_logs.png)
+
+👉 Logs clearly show failed (4625), successful (4624), and privileged (4672) logins.
+
 
 ## 🧠 Key Learnings
 
